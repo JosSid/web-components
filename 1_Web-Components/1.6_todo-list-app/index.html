@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        :root{
+            --item-background-color: lightblue;
+        }
+    </style>
+    
+    <input-action icon="🔎"></input-action>
+
+    <list-item text="Hola Mundo"></list-item>
+
+    <script type="module" src="./input-action.js"></script>
+    <script type="module" src="./list-item.js"></script>
+    <script>
+        const inputActionElement = document.querySelector('list-item');
+
+        inputActionElement.addEventListener('removeItem', (event) => {
+            console.log('elemento borrado')
+        })
+    </script>
+</body>
+</html>
