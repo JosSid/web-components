@@ -5,6 +5,10 @@ templateElement.innerHTML = `
     div {
         border: solid grey 2px;
         background-color: var(--item-background-color, whitesmoke);
+        border-radius: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
     }
 
 </style>

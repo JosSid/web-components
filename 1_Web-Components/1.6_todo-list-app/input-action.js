@@ -57,3 +57,6 @@ class InputAction extends HTMLElement {
 }
 
 customElements.define("input-action", InputAction);
+
+
+export const cositas = 4
