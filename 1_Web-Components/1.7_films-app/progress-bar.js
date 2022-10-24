@@ -3,16 +3,16 @@ const templateElement = document.createElement("template");
 templateElement.innerHTML = `
 <style>
 
-.progress-bar-wrapper {
-    background-color: var(--progress-bar-background-color, black);
-    width: 100%;
-    height: var(--progress-bar-height, 30px);
-}
+    .progress-bar-wrapper {
+        background-color: var(--progress-bar-background-color, black);
+        width: 100%;
+        height: var(--progress-bar-height, 30px);
+    }
 
-.progress-bar {
-    background-color: var(--progress-bar-progress-background-color, orange);
-    height:100%;
-}
+    .progress-bar {
+        background-color: var(--progress-bar-progress-background-color, orange);
+        height:100%;
+    }
 
 </style>
 
@@ -26,7 +26,7 @@ class ProgressBar extends HTMLElement {
   constructor() {
     super();
 
-    this.progress = this.getAttribute('progress')
+    this.progress = this.getAttribute('progress') || 0;
     this.attachShadow({ mode: "open" });
   }
 
