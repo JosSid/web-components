@@ -44,7 +44,8 @@ class ListItem extends HTMLElement {
         const event = new CustomEvent('removeItem')
 
         this.dispatchEvent(event)
-        this.remove();
+        const father = this.parentNode
+        father.remove();
     });
   }
 }
